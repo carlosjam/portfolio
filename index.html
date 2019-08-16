@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
     rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>carlosjam.dev</title>
 </head>
 <body>
@@ -25,21 +25,21 @@
     </header>
 
     <div class="welcome">
-        <div class="welcome-a">
-        <p>Hey. I'm <span class="welcome__name">Carlos Avendaño</span>, a front-end web developer.</p>
-        <p>Please take a look around!</p>
+        <div class="welcome">
+        <h2 class="animated fadeInDown">Hey. I'm <span class="welcome__name">Carlos Avendaño</span>, a front-end web developer.</h2>
+        <h3 class="animated fadeIn">I code beautiful websites, and really love what I do so please take a look around!</h3>
         <div class="btn-container">
             <button class="btn">
                 <span class="btn__visible">Resume <span>&rarr;</span></span>
                 <span class="btn__invisible">Download</span>
             </button>
-            <button class="btn">
+            <button class="btn" onclick="linkedIn()")>
                 <span class="btn__visible">LinkedIn <span>&rarr;</span></span>
-                <span class="btn__invisible">Download</span>
+                <span class="btn__invisible">Let's go!</span>
             </button>
         </div>
         </div>
-                <img class="arrow" src="img/arrow.svg" alt="Shield">
+                <img class="arrow animated infinite bounce" src="img/arrow.svg" alt="Shield">
     </div>
     
     <div class="main">
@@ -49,5 +49,10 @@
             ・&copy; 2018 Carlos Avendaño・Icons &copy; <span><a
                     href="https://www.silhouette-illust.com/policy">シルエットアイコンイラスト</a></span>・
     </footer>
+    <script>
+        linkedIn = function () {
+            window.open('https://www.linkedin.com/in/carlos-avendaño-b97083b1/');
+        };
+    </script>
 </body>
 </html>
