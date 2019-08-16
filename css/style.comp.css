@@ -84,7 +84,8 @@ body {
   flex-direction: column;
   background: var(--color-primary);
   min-height: 100vh;
-  text-align: center; }
+  text-align: center;
+  padding-top: 3rem; }
   .welcome p {
     color: #E5E5E5;
     font-size: 4rem;
@@ -95,10 +96,10 @@ body {
     color: #85F276; }
 
 .btn-container {
-  padding-top: 50px; }
+  padding-top: 5rem; }
 
 .btn:not(:last-child) {
-  margin-right: 10rem; }
+  margin-right: 15rem; }
 
 .btn {
   font-size: 1.7rem;
@@ -106,7 +107,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 100px;
-  color: #3e3b3b;
+  color: #272C38;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -135,6 +136,14 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+.arrow {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+  height: 7rem;
+  width: 7rem;
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(232deg) brightness(106%) contrast(106%); }
+
 .main {
   height: 5000px; }
 
@@ -145,12 +154,9 @@ footer {
   background: var(--color-primary);
   padding-top: 10px;
   padding-bottom: 10px; }
-
-footer a {
-  color: #fff; }
-
-footer a:hover {
-  color: #2db37f; }
-
-footer span {
-  font-size: 13px; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #2db37f; }
+  footer span {
+    font-size: 13px; }
