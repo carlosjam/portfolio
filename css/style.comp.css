@@ -1,5 +1,7 @@
 :root {
-  --color-primary: #272C38; }
+  --color-primary: #272C38;
+  --color-secondary: #62B257;
+  --color-secondary-light: #85F276; }
 
 * {
   margin: 0;
@@ -21,7 +23,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   min-height: 100vh; }
 
@@ -61,7 +63,7 @@ body {
       content: " ";
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 2.5px;
       bottom: 0;
       left: 0;
       background-color: #85F276;
@@ -91,6 +93,47 @@ body {
   .welcome__name {
     font-weight: 600;
     color: #85F276; }
+
+.btn-container {
+  padding-top: 50px; }
+
+.btn:not(:last-child) {
+  margin-right: 10rem; }
+
+.btn {
+  font-size: 1.7rem;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #3e3b3b;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(180deg, #f2cf00 0, #f2b200 100%);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 1.7rem 7rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 1.7rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(180deg, #f2cf00 0, #f2b200 100%); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
 
 .main {
   height: 5000px; }
