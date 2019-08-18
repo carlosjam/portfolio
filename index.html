@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link
-    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Ubuntu:300,400,500,700&display=swap"
-    rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <title>carlosjam.dev</title>
 </head>
+
 <body>
+
+<!---/Nav-------------------------------------------------------------------------------------->
     <header class="header">
         <div class="header__container">
             <h1>carlosjam.dev</h1>
             <ul class="header__main-nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </header>
 
-        <div class="welcome">
-        <h2 class="animated fadeInDown">Hey. I'm <span class="welcome__name">Carlos Avendaño</span>, a front-end web developer.</h2>
+<!---/WELCOME MESSAGE-------------------------------------------------------------------------------------->
+    <section class="welcome">
+        <h2 class="animated fadeInDown">Hey. I'm <span class="welcome__name">Carlos Avendaño</span>, a front-end web developer.<h2>
         <h3 class="animated fadeIn">I code beautiful websites, and really love what I do so please take a look around!</h3>
+
         <div class="btn-container">
-            <button class="btn" onclick="linkedIn()")>
+            <button class="btn")>
+                <span class="btn__visible">Check my resume</span>
+                <span class="btn__invisible">Download</span>
+            </button>
+
+            <button class="btn")>
                 <span class="btn__visible">View my work <span>&darr;</span></span>
                 <span class="btn__invisible">Let's go!</span>
             </button>
         </div>
-                <img class="arrow animated infinite bounce" src="img/arrow.svg" alt="Shield">
-    </div>
-    
-    <div class="introduction">
 
-        <div class="introduction__offer">
-            <p>How can I help<span>?</span></p>
+        <div class="shortcuts-container">
+            <svg class= "" onclick="gitHub()">
+                <use xlink:href="img/sprites.svg#github" />
+            </svg>
+            <svg class= "" onclick="linkedIn()">
+                <use xlink:href="img/sprites.svg#linkedin" />
+            </svg>
         </div>
-        
-        <div class="introduction__points">
 
+        <img class="arrow animated infinite bounce" src="img/arrow.svg" alt="Shield">
+    </section>
+
+<!---/INTRODUCTION-------------------------------------------------------------------------------------->
+    <section class="introduction">
+        <div class="introduction__heading">
+            <p>How can I help?</p>
+        </div>
+
+        <div class="introduction__points">
             <div class="introduction__rectangle">
                 <img class="introduction__icons" src="img/dynamic.svg" alt="">
-                <p>Dynamic and Intuitive pages.</p>
+                <p class="introduction__title">Dynamic and Intuitive</p>
+                <p class="introduction__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit in dolorem ad ratione sapiente culpa minima.</p>
             </div>
-
             <div class="introduction__rectangle">
                 <img class="introduction__icons" src="img/responsive.svg" alt="">
-                <p>Responsive designs that makes your website accessible to all users, on a wide range of devices.</p>
+                <p class="introduction__title">Responsive design</p>
+                <p class="introduction__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit in dolorem ad ratione sapiente culpa minima.</p>
             </div>
-
             <div class="introduction__rectangle">
                 <img class="introduction__icons" src="img/code.svg" alt="">
-                <p>Pixel Perfect Coded sites.</p>
+                <p class="introduction__title">Pixel Perfect</p>
+                <p class="introduction__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit in dolorem ad ratione sapiente culpa minima.</p>
             </div>
-
             <div class="introduction__rectangle">
                 <img class="introduction__icons" src="img/diamond.svg" alt="">
-                <p>Stand out from the rest.</p>
+                <p class="introduction__title">Stand out</p>
+                <p class="introduction__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit in dolorem ad ratione sapiente culpa minima.</p>
             </div>
         </div>
 
-    </div>
+    </section>
+
+<!---/SUMMARY-------------------------------------------------------------------------------------->
 
     <div class="main">
         lore
     </div>
-
 
     <footer>
         ・Design and code &copy; 2019 Carlos Avendaño・<div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a>
@@ -80,9 +98,14 @@
                     href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
             </div>
     </footer>
+
+<!--/SCRIPTS----------------------------------------------------------------------------------->
     <script>
         linkedIn = function () {
             window.open('https://www.linkedin.com/in/carlos-avendaño-b97083b1/');
+        };
+        gitHub = function () {
+            window.open('https://github.com/carlosjam');
         };
     </script>
 </body>
