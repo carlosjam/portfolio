@@ -110,7 +110,7 @@ body {
 /* ================= Button ================= */
 .btn-container {
   padding-top: 5rem;
-  padding-bottom: 6rem; }
+  padding-bottom: 5rem; }
 
 .btn {
   position: relative;
@@ -154,8 +154,8 @@ body {
   display: flex;
   align-items: center; }
   .shortcuts-container svg {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 3.7rem;
+    width: 3.7rem;
     fill: #E5E5E5;
     transition: all .2s; }
     .shortcuts-container svg:not(:last-child) {
