@@ -64,8 +64,9 @@ body {
   .header__main-nav {
     display: flex; }
     .header__main-nav li {
-      font-size: 1.7rem;
-      padding-left: 3.5rem; }
+      font-size: 1.7rem; }
+    .header__main-nav li:not(:last-child) {
+      padding-right: 3.5rem; }
     .header__main-nav a {
       color: var(--color-welcome-text);
       text-decoration: none; }
@@ -102,7 +103,7 @@ body {
   min-height: 100vh;
   padding-top: 5rem; }
   .welcome h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500; }
   .welcome__name {
     font-weight: 600;
@@ -182,34 +183,30 @@ body {
 ==================================== */
 .introduction {
   background-color: var(--introduction-bg);
-  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--color-main-text);
-  font-family: var(--font-content); }
+  font-family: var(--font-content);
+  padding: 5rem 5rem 10rem 5rem; }
   .introduction__heading {
-    padding-bottom: 4rem;
-    margin-top: 4rem;
     font-family: 'Ubuntu', sans-serif; }
     .introduction__heading p {
       font-size: 4rem;
-      font-weight: 600; }
+      font-weight: 600;
+      padding-bottom: 5rem; }
   .introduction__points {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 8rem;
-    margin-bottom: 8rem; }
+    width: 100%; }
   .introduction__rectangle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    height: 30rem;
     width: 25rem;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -244,7 +241,7 @@ body {
     padding-bottom: 4rem;
     font-family: 'Ubuntu', sans-serif; }
     .main__heading p {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 600; }
 
 .portfolio {
@@ -278,3 +275,65 @@ footer {
   max-width: 700px;
   margin: 0 auto;
   background-color: #3e3b3b; }
+
+@media screen and (min-width: 2048px) {
+  .introduction__points {
+    width: 60%; } }
+
+@media screen and (min-width: 1700px) {
+  .introduction__points {
+    width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%; }
+  .header__container {
+    flex-direction: column; }
+    .header__container h1 {
+      color: var(--color-welcome-text);
+      font-size: 3.3rem;
+      padding-bottom: .5rem; }
+  .welcome {
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    .welcome h2 {
+      font-size: 2.5rem;
+      font-weight: 500; }
+    .welcome__name {
+      font-weight: 600;
+      color: var(--color-secondary-light); }
+    .welcome h3 {
+      font-size: 2rem;
+      font-weight: 200;
+      padding-top: 1rem; }
+  .btn-container {
+    padding-top: 3rem; }
+  .btn {
+    font-size: 1rem; }
+    .btn:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 2rem; }
+  .introduction {
+    padding: 3rem 3rem 5rem 3rem; }
+    .introduction__points {
+      width: 100%; }
+    .introduction__rectangle {
+      flex: 0 47%;
+      margin-bottom: 2.5rem; } }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 40%; }
+  .btn {
+    font-size: 10px;
+    width: 22rem; }
+  .introduction {
+    padding: 2rem 2rem 2rem 2rem; }
+    .introduction__heading > p {
+      padding-bottom: 2rem; }
+    .introduction__points {
+      width: 100%; }
+    .introduction__rectangle {
+      flex: 0 47%;
+      margin-bottom: 2rem;
+      width: 10rem; } }
