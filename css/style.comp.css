@@ -31,7 +31,8 @@ ul {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-welcome);
@@ -189,8 +190,8 @@ body {
   color: var(--color-main-text);
   font-family: var(--font-content); }
   .introduction__heading {
-    padding-bottom: 4.5rem;
-    margin-top: 5rem;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
     font-family: 'Ubuntu', sans-serif; }
     .introduction__heading p {
       font-size: 4rem;
@@ -200,7 +201,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    padding: 0 8rem 9rem 8rem; }
+    padding: 0 8rem;
+    margin-bottom: 8rem; }
   .introduction__rectangle {
     display: flex;
     flex-direction: column;
@@ -230,31 +232,27 @@ body {
     color: var(--color-secondary-light);
     font-weight: 700; }
 
-/* =================================
-  SUMMARY SECTION
-==================================== */
-.summary {
-  background-color: var(--summary-bg);
-  height: 800px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: solid green 2px;
-  padding: 0 10rem; }
-  .summary__skills {
-    border: solid red 2px;
-    height: 700px;
-    width: 500px; }
-  .summary__me {
-    border: solid blue 2px;
-    height: 700px;
-    width: 500px; }
-
 /* ====================================================================================================== */
 .main {
-  height: 1000px;
-  background-color: #1a1a1d; }
+  height: 800px;
+  background-color: var(--introduction-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5rem 8rem; }
+  .main__heading {
+    padding-bottom: 4rem;
+    font-family: 'Ubuntu', sans-serif; }
+    .main__heading p {
+      font-size: 4rem;
+      font-weight: 600; }
+
+.portfolio {
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%; }
 
 footer {
   width: 100%;
@@ -269,3 +267,14 @@ footer {
       color: #2db37f; }
   footer span {
     font-size: 13px; }
+
+.inv {
+  position: absolute;
+  z-index: -99; }
+
+.line {
+  padding-top: 2px;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #3e3b3b; }
