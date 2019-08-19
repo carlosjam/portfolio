@@ -294,6 +294,7 @@ footer {
       font-size: 3.3rem;
       padding-bottom: .5rem; }
   .welcome {
+    padding-top: 4rem;
     padding-left: 3rem;
     padding-right: 3rem; }
     .welcome h2 {
@@ -324,13 +325,22 @@ footer {
 @media screen and (max-width: 375px) {
   html {
     font-size: 40%; }
+  .btn-container {
+    padding-bottom: 3rem; }
+  .welcome {
+    padding-top: 5rem; }
   .btn {
-    font-size: 10px;
-    width: 22rem; }
+    font-size: 8px;
+    width: 20rem; }
+    .btn__visible {
+      padding: 1.37rem; }
+    .btn__invisible {
+      padding: 1.37rem 0; }
+  .shortcuts-container svg {
+    height: 2.7rem;
+    width: 2.7rem; }
   .introduction {
     padding: 2rem 2rem 2rem 2rem; }
-    .introduction__heading > p {
-      padding-bottom: 2rem; }
     .introduction__points {
       width: 100%; }
     .introduction__rectangle {
