@@ -48,6 +48,7 @@ body {
   top: 0;
   width: 100%;
   background: var(--color-primary);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
   /* ================= Nav ================= */ }
   .header__container {
     display: flex;
@@ -98,7 +99,9 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--color-primary);
+  background-image: linear-gradient(rgba(26, 26, 29, 0.8), rgba(16, 29, 44, 0.83)), url(../img/bgtest2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--color-welcome-text);
   min-height: 100vh;
   padding-top: 5rem; }
@@ -285,35 +288,47 @@ footer {
     width: 80%; } }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 45%; }
   .header__container {
     flex-direction: column; }
     .header__container h1 {
       color: var(--color-welcome-text);
-      font-size: 3.3rem;
+      font-size: 2.7rem;
       padding-bottom: .5rem; }
+  .header__main-nav {
+    display: flex; }
+    .header__main-nav li {
+      font-size: 1.3rem; }
   .welcome {
     padding-top: 4rem;
     padding-left: 3rem;
     padding-right: 3rem; }
     .welcome h2 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       font-weight: 500; }
     .welcome__name {
       font-weight: 600;
       color: var(--color-secondary-light); }
     .welcome h3 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 200;
       padding-top: 1rem; }
   .btn-container {
-    padding-top: 3rem; }
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0; }
   .btn {
-    font-size: 1rem; }
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 30rem; }
+    .btn__visible {
+      padding: 1.37rem; }
+    .btn__invisible {
+      padding: 1.37rem 0; }
     .btn:not(:last-child) {
       margin-right: 0;
       margin-bottom: 2rem; }
+  .shortcuts-container {
+    padding-top: 0rem; }
   .introduction {
     padding: 3rem 3rem 5rem 3rem; }
     .introduction__points {
@@ -321,6 +336,9 @@ footer {
     .introduction__rectangle {
       flex: 0 47%;
       margin-bottom: 2.5rem; } }
+
+.arrow {
+  width: 2rem; }
 
 @media screen and (max-width: 375px) {
   html {
