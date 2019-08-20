@@ -176,7 +176,7 @@ body {
 .arrow {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   height: 3rem;
   width: 3rem;
   filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(232deg) brightness(106%) contrast(106%); }
@@ -335,10 +335,9 @@ footer {
       width: 100%; }
     .introduction__rectangle {
       flex: 0 47%;
-      margin-bottom: 2.5rem; } }
-
-.arrow {
-  width: 2rem; }
+      margin-bottom: 2.5rem; }
+  .arrow {
+    width: 2rem; } }
 
 @media screen and (max-width: 375px) {
   html {
