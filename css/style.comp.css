@@ -99,7 +99,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(rgba(26, 26, 29, 0.8), rgba(16, 29, 44, 0.83)), url(../img/bgtest2.jpg);
+  background-image: linear-gradient(rgba(26, 26, 29, 0.8), rgba(16, 29, 44, 0.83)), url(../img/bgtest2.webp);
   background-size: cover;
   background-attachment: fixed;
   color: var(--color-welcome-text);
