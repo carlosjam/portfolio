@@ -17,19 +17,19 @@
 </head>
 
 <body>
+<!---/NAV-------------------------------------------------------------------------------------->
 
-<!---/Nav-------------------------------------------------------------------------------------->
-    <header class="header">
-        <div class="header__container">
-            <h1>carlosjam<span>.dev</span></h1>
-            <ul class="header__main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+<header class="header" id="stickyHeader">
+    <div class="header__container">
+        <h1>carlosjam<span>.dev</span></h1>
+        <ul class="header__main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+</header>
 
 <!---/WELCOME MESSAGE-------------------------------------------------------------------------------------->
     <section class="welcome">
@@ -59,6 +59,53 @@
 
         <img class="arrow animated infinite bounce" src="img/arrow.svg" alt="Shield">
     </section>
+
+<!---/ABOUT-------------------------------------------------------------------------------------->
+
+        <section class="main content">
+            <div class="portfolio">
+                <div class="about">
+                    <h4>About me</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem consequuntur accusantium, unde aperiam magni? Modi quis accusantium assumenda, soluta aliquam maxime praesentium minima consequuntur impedit esse delectus sit cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem consequuntur accusantium, unde aperiam magni? Modi quis accusantium assumenda, soluta aliquam maxime praesentium minima consequuntur impedit esse delectus sit cumque.</p>
+                    <h4>Skills</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem consequuntur accusantium, unde aperiam
+                        magni? Modi quis accusantium assumenda, soluta aliquam maxime praesentium minima consequuntur impedit esse delectus
+                        sit cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quidem consequuntur accusantium, unde aperiam
+                        magni? Modi quis accusantium assumenda, soluta aliquam maxime praesentium minima consequuntur impedit esse delectus
+                        sit cumque.</p>
+                </div>
+
+                <div class="form">
+                    <form action="form.php" class="form__conifg">
+                        <div>
+                            <h4>Contact</h4>
+                        </div>
+                    
+                        <div class="form__group">
+                            <input name="name" type="text" class="form__input" placeholder="Full name" id="name" required>
+                            <label for="name" class="form__label">Full name</label>
+                        </div>
+                    
+                        <div class="form__group">
+                            <input name="email" type="email" class="form__input" placeholder="Email address" id="email" required>
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea name="message" class="form__input" placeholder="Message" row="4" required></textarea>
+                            <label for="email" class="form__label">Email address</label>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="submit" name="" id="" value="send message">
+                            <button class="btn">Send</button>
+                        </div>
+                        <img class="fiverr" onclick="fiverr()" src="img/fiverr.svg" alt="">
+                </div>
+            </div>
+        </section>
 
 <!---/INTRODUCTION-------------------------------------------------------------------------------------->
     <section class="introduction">
@@ -119,6 +166,20 @@
         gitHub = function () {
             window.open('https://github.com/carlosjam');
         };
+        fiverr = function () {
+            window.open('https://www.fiverr.com/');
+        };
+
+        window.onscroll = function () { myFunction() };
+        var header = document.getElementById("stickyHeader");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
     </script>
 </body>
 </html>
